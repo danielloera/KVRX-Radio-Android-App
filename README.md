@@ -1,4 +1,4 @@
 # KVRX-Radio-App
 UT Student Radio
 
-This is the app for the UT STudent Radio, KVRX.
+This is the app for the UT Student Radio, KVRX.
