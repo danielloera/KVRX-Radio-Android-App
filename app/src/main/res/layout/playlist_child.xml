@@ -1,0 +1,34 @@
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.htmlwarriors.kvrxradio.Schedule"
+    android:background="@color/defaultArtBGColor"
+
+    android:padding="5dp"
+    >
+
+    <TextView
+        android:id="@+id/trackChild"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:text="DUMMY TEXT"
+        app:layout_widthPercent="85%"
+        />
+
+    <ImageView
+        android:id="@+id/djTrackInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cd"
+        android:layout_toEndOf="@id/trackChild"
+        app:layout_widthPercent="16%"
+        />
+
+
+
+</android.support.percent.PercentRelativeLayout>

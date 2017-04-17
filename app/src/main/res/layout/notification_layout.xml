@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    >
+
+    <ImageView
+        android:id="@+id/notifAlbumArt"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_widthPercent="33%"
+        />
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/notifInfoLayout"
+        app:layout_widthPercent="67%"
+        app:layout_heightPercent="70%"
+        android:layout_toEndOf="@+id/notifAlbumArt"
+        >
+        <TextView
+            android:id="@+id/notifSongText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_heightPercent= "40%"
+            android:paddingStart="5dp"
+
+            android:text="SONG NAME"
+            android:gravity="center_vertical"
+            />
+        <TextView
+            android:id="@+id/notifAlbumArtistText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/notifSongText"
+            app:layout_heightPercent= "60%"
+            android:paddingStart="5dp"
+
+            android:text="ARIST - ALBUM"
+            android:gravity="center_vertical"
+            />
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/notifButtonLayout"
+        app:layout_widthPercent="67%"
+        app:layout_heightPercent="30%"
+        android:layout_toEndOf="@+id/notifAlbumArt"
+        android:layout_alignParentBottom="true"
+        >
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/notifPlayPauseLayout"
+
+            app:layout_widthPercent="50%"
+            >
+            <ImageView
+                android:id="@+id/notifPlayPauseIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                />
+            <TextView
+            android:id="@+id/notifPlayPauseText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="PLAY"
+            android:gravity="center_vertical"
+                android:paddingStart="5dp"
+            app:layout_widthPercent="60%"
+                android:layout_toEndOf="@id/notifPlayPauseIcon"
+            />
+
+        </android.support.percent.PercentRelativeLayout>
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/notifStopLayout"
+            app:layout_widthPercent="50%"
+            android:layout_toEndOf="@+id/notifPlayPauseLayout"
+            >
+            <ImageView
+                android:id="@+id/notifStopIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                />
+            <TextView
+            android:id="@+id/notifStopText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="STOP"
+                app:paddingStart="5dp"
+            android:gravity="center_vertical"
+            app:layout_widthPercent="60%"
+                android:layout_toEndOf="@+id/notifStopIcon"
+            />
+
+        </android.support.percent.PercentRelativeLayout>
+
+    </android.support.percent.PercentRelativeLayout>
+
+</android.support.percent.PercentRelativeLayout>

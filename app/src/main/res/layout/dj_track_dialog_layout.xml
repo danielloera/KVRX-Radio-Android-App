@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/buttonsBGColor"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/trackArtLayout"
+        app:layout_heightPercent="40%"
+        >
+    <io.codetail.widget.RevealFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/trackArtFrame"
+        >
+        <ImageView
+            android:id="@+id/TrackAlbumArt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/kvrxrecord"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            />
+    </io.codetail.widget.RevealFrameLayout>
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/trackProgress"
+            android:indeterminate="true"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/TrackInfo"
+        android:text="Dummy"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textColor="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/trackArtLayout"
+        app:layout_heightPercent = "15%"
+        android:clickable="false"
+        />
+
+
+</android.support.percent.PercentRelativeLayout>

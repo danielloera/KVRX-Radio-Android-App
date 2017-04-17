@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">KVRX Radio</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_artist_page">Artist_page</string>
+    <string name="title_activity_schedule">Schedule</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_nav_drawer">NavDrawer</string>
+    <string name="title_activity_menu">menu</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_nav_bar">navBar</string>
+    <string name="title_activity_navigation">navigation</string>
+    <string name="title_activity_djpage">DJPage</string>
+
+</resources>

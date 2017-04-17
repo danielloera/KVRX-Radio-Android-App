@@ -1,0 +1,20 @@
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/schedule"
+    tools:context="com.htmlwarriors.kvrxradio.Schedule"
+    android:background="@color/defaultArtBGColor">
+
+    <ExpandableListView
+        app:layout_heightPercent = "100%"
+        android:id="@+id/lvExp"
+        android:scrollbars="none"
+        android:dividerHeight="0dp"
+        android:divider="@color/accent_material_light"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"/>
+
+
+</android.support.percent.PercentRelativeLayout>
